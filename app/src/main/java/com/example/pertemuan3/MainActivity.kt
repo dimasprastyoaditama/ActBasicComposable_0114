@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.pertemuan3.ui.theme.Pertemuan3Theme
@@ -14,10 +13,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Pertemuan3Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    // menggunakan innerPadding agar kotak kuning tidak menabrak kamera atas
-                    TataletakBoxColumnRow(
-                        modifier = Modifier.padding(paddingValues = innerPadding)
+                Scaffold(modifier = Modifier.fillMaxSize()) { _ ->
+                    HalamanLogin(
+                        modifier = Modifier.fillMaxSize()
                     )
                 }
             }
