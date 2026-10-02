@@ -64,6 +64,22 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 contentScale = ContentScale.Fit
             )
 
+            Spacer(modifier = Modifier.height(31.dp))
+
+            Text(text = "Nama", color = Color(0xFFFFFFFF), fontSize = 17.sp)
+            Text(
+                text = stringResource(id = R.string.nama_mahasiswa),
+                color = Color(0xFF052CF3),
+                fontWeight = FontWeight.Bold,
+                fontSize = 20.sp
+            )
+            Text(
+                text = stringResource(id = R.string.nim_mahasiswa),
+                color = Color(0xFFEA0536),
+                fontWeight = FontWeight.Bold,
+                fontSize = 22.sp
+            )
+
         }
     }
 }
