@@ -80,6 +80,17 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 fontSize = 22.sp
             )
 
+            Spacer(modifier = Modifier.height(40.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.foto_adit),
+                contentDescription = "Foto Profil",
+                modifier = Modifier
+                    .size(300.dp)
+                    .clip(CircleShape)
+                    .border(4.dp, Color(0xFF101010), CircleShape),
+                contentScale = ContentScale.Crop
+            )
         }
     }
 }
