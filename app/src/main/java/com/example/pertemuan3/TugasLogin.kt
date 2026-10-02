@@ -54,6 +54,16 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 fontSize = 16.sp,
                 color = Color(0xFFFFFFFF)
             )
+
+            Spacer(modifier = Modifier.height(30.dp))
+
+            Image(
+                painter = painterResource(id = R.drawable.logo_umy),
+                contentDescription = "Logo",
+                modifier = Modifier.size(150.dp),
+                contentScale = ContentScale.Fit
+            )
+
         }
     }
 }
